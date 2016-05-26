@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">myViews</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_view_pager_demo">VIewPagerDemoActivity</string>
+    <string name="title_activity_ipad_pager">IpadPagerActivity</string>
+    <string name="title_activity_loop_view">LoopViewActivity</string>
+    <string name="title_activity_arc">ArcActivity</string>
+    <string name="title_activity_myimage">MyimageActivity</string>
+    <string name="title_activity_blow">BlowActivity</string>
+    <string name="title_activity_window">WindowActivity</string>
+    <string name="title_activity_my_decor">MyDecorActivity</string>
+    <string name="title_activity_indicator">IndicatorActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sliding_menu">SlidingMenuActivity</string>
+    <string name="title_activity_roll_back">RollBackActivity</string>
+
+</resources>

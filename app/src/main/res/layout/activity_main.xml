@@ -1,0 +1,116 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onClick"
+        android:text="ViewPagerDemo" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:onClick="onClick"
+        android:text="IpadPagerDemo" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button2"
+        android:onClick="onClick"
+        android:text="LoopViewDemo" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:onClick="onClick"
+        android:text="ArcDemo" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button4"
+        android:onClick="onClick"
+        android:text="Myimage" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignRight="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:onClick="onClick"
+        android:text="BlowView" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignRight="@+id/button6"
+        android:layout_below="@+id/button6"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:text="WindowDemo" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignRight="@+id/button7"
+        android:layout_below="@+id/button7"
+        android:onClick="onClick"
+        android:text="MyWindowDemo" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignRight="@+id/button8"
+        android:layout_below="@+id/button8"
+        android:onClick="onClick"
+        android:text="MyIndicatorDemo" />
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignRight="@+id/button9"
+        android:layout_below="@+id/button9"
+        android:onClick="onClick"
+        android:text="MySlidingMenuDemo" />
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button10"
+        android:layout_alignRight="@+id/button10"
+        android:layout_below="@+id/button10"
+        android:onClick="onClick"
+        android:text="RollBackDemo" />
+</RelativeLayout></ScrollView>
