@@ -19,9 +19,7 @@ public class viewgroup2 extends ViewGroup {
     private View child;
     private boolean isopen, notfirst, isreturn;
     Scroller mScroller;
-    long downtime, uptime;
     viewgroup1 menuview;
-    ActivityManager am;
     float lastx, lasty, movex;
     int fade;
     Paint paint;

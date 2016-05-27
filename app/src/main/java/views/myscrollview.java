@@ -13,7 +13,6 @@ public class myscrollview extends HorizontalScrollView implements Indicator{
 	View[] grandchildren;
 	int x = 0, y = 0, downx = 0, downy = 0, toscrollx = 0,currentindex=0;
 	boolean isscroll = false, fromman = false;
-	Scroller s;
 	private onItemSeclectedListener listener;
 	Runnable myrun = new Runnable() {
 		@Override
@@ -24,7 +23,6 @@ public class myscrollview extends HorizontalScrollView implements Indicator{
 
 	public myscrollview(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		s = new Scroller(context);
 	}
 
 	public void setListener(onItemSeclectedListener listener) {
@@ -44,9 +42,6 @@ public class myscrollview extends HorizontalScrollView implements Indicator{
 			}
 			mytext text1 = (mytext) grandchildren[0];
 			text1.setDirectionAndX(direction.RIGHT, 0.0f);
-//			TextView tv = (TextView) child.getChildAt(0);
-			// tv.setTextColor(Color.RED);
-			// tv.setSelected(true);
 		}
 	}
 
@@ -76,7 +71,6 @@ public class myscrollview extends HorizontalScrollView implements Indicator{
 						if (x > gv.getLeft() - scrollx
 								&& x < gv.getRight() - scrollx) {
 							index = i;
-							// toscrollx=gv.getLeft()-3;
 							break;
 						}
 					}
@@ -92,32 +86,20 @@ public class myscrollview extends HorizontalScrollView implements Indicator{
 			}
 			break;
 		}
-		return super.dispatchTouchEvent(ev);
+		return true;
 	}   
 
 	public void scrolltograndchild(int index) {
-//		int scrollx = getScrollX();
 		View g = grandchildren[index];
 		cleargrandselet();
 		currentindex=index;
-//		TextView tv = (TextView) g;
-		// tv.setTextColor(Color.RED);
-		// g.setSelected(true);
 		mytext text1 = (mytext) grandchildren[index];
 		text1.setDirectionAndX(direction.RIGHT, 0.0f);
 		toscrollx = g.getLeft() + g.getWidth() / 2 - getWidth() / 2;
-//		int dx = toscrollx - scrollx;
 		smoothScrollTo(toscrollx, 0);
-		// s.startScroll(scrollx, 0, dx, 0,Math.abs(dx)*7);
-		// invalidate();
 	}
 
 	public void cleargrandselet() {
-//		for (View g : grandchildren) {
-//			TextView tv = (TextView) g;
-//			tv.setTextColor(Color.BLACK);
-//			g.setSelected(false);
-//		}
 		mytext text1 = (mytext) grandchildren[currentindex];
 		text1.setDirectionAndX(direction.RIGHT, 1.0f);
 	}
@@ -126,9 +108,6 @@ public class myscrollview extends HorizontalScrollView implements Indicator{
 	public void computeScroll() {
 		// TODO Auto-generated method stub
 		super.computeScroll();
-		if (s.computeScrollOffset()) {
-			scrollTo(s.getCurrX(), s.getCurrY());
-		}
 	}
 
 
@@ -150,7 +129,6 @@ public class myscrollview extends HorizontalScrollView implements Indicator{
 	@Override
 	public void onViewPageSelected(int arg0) {
 		scrolltograndchild(arg0);
-		
 	}
 
 	@Override

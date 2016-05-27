@@ -118,7 +118,7 @@ public class myrelative extends RelativeLayout {
     public void setListener(OnSliderListener listener) {
         mygroup2.setListener(listener);
     }
-    public interface OnSliderListener {
+    public static interface OnSliderListener {
         void onscroll(float percent,int x);
     }
 
