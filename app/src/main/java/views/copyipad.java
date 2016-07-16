@@ -149,7 +149,7 @@ public class copyipad extends ViewGroup {
 					* paddingx, 0);
 			canvas.scale(1.0f + 0.4f * percent, 1.0f + 0.4f * percent,
 					child.getLeft() + vieww / 2, centery);
-			camera.rotateY(per * 30);
+			camera.rotateY(per * 20);
 			camera.getMatrix(matrix);
 			canvas.translate(transx, centery);
 			canvas.concat(matrix);

@@ -16,7 +16,7 @@ public class myviewpager extends ViewPager {
 
     public myviewpager(Context context, AttributeSet attrs) {
         super(context, attrs);
-
+        init();
         // TODO Auto-generated constructor stub
     }
 public void init(){

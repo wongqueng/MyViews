@@ -25,7 +25,7 @@ public class blowView extends View {
 	Path path;
 	int index,defaultwidth,defaultheight;
 	boolean intouch, hadstarted = false, hadtouched = false;
-	String text = "�ο�Ӯȡ����!!!";
+	String text = "刮刮卡，赢取大奖";
 	Runnable redraw = new Runnable() {
 		@Override
 		public void run() {
@@ -49,7 +49,7 @@ public class blowView extends View {
 		path = new Path();
 		abovePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 		abovePaint.setStyle(Style.STROKE);
-		abovePaint.setStrokeWidth(40);
+		abovePaint.setStrokeWidth(100);
 		abovePaint.setXfermode(new PorterDuffXfermode(Mode.DST_OUT));
 		abovePaint.setStrokeCap(Cap.ROUND);
 		backBm = BitmapFactory.decodeResource(getResources(), R.drawable.lyf2);
@@ -65,11 +65,11 @@ public class blowView extends View {
 		aboveBm = Bitmap.createBitmap(w, h, Config.ARGB_8888);
 		aboveCanvas = new Canvas(aboveBm);
 		aboveCanvas.drawColor(Color.GRAY);
-		textpaint.setTextSize(h / 10);
+		textpaint.setTextSize(h / 20);
 		int textwidth = (int) textpaint.measureText(text);
 		aboveCanvas.drawText(text, (getWidth() - textwidth) / 2,
 				getHeight() / 2, textpaint);
-		// new Thread(new checkPixels(++index)).start();
+		 new Thread(new checkPixels(++index)).start();
 	}
 
 	@Override
