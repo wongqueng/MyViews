@@ -54,7 +54,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/button4"
         android:onClick="onClick"
-        android:text="Myimage" />
+        android:text="mylist" />
 
     <Button
         android:id="@+id/button6"

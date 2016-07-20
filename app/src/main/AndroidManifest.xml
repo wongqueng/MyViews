@@ -33,6 +33,9 @@
             android:name=".MyimageActivity"
             android:label="@string/title_activity_myimage"></activity>
         <activity
+            android:name=".BrandListActivity"
+            android:label="@string/title_activity_myimage"></activity>
+        <activity
             android:name=".BlowActivity"
             android:label="@string/title_activity_blow"></activity>
         <activity

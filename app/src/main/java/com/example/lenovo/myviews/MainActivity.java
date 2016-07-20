@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 			startActivity(i4);
 			break;
 		case R.id.button5:
-			Intent i5 = new Intent(this, MyimageActivity.class);
+			Intent i5 = new Intent(this, BrandListActivity.class);
 			startActivity(i5);
 			break;
 		case R.id.button6:
