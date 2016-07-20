@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="orange">#ffffa700</color>
+    <color name="lightgray">#ff999999</color>
+    <color name="lighttistgray">#88999999</color>
+    <color name="white">#ffffffff</color>
+    <color name="ColorButtonRelease">#FCC689</color>
+    <color name="ColorButtonPressed">#FF7438</color>
+    <color name="ColorButtonDisable">#EEE</color>
 </resources>
