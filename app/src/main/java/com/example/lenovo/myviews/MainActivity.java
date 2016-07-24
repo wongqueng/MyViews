@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 			startActivity(i3);
 			break;
 		case R.id.button4:
-			Intent i4 = new Intent(this, ArcActivity.class);
+			Intent i4 = new Intent(this,MyPathActivity.class);
 			startActivity(i4);
 			break;
 		case R.id.button5:

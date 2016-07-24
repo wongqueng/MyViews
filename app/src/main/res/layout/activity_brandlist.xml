@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <include layout="@layout/global_title"/>   
+ <RelativeLayout 
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView 
+        android:id="@+id/brand_headTextView"
+        android:layout_width="@dimen/branditemheight"
+        android:gravity="center"
+        android:textSize="@dimen/firsttextsize"
+        android:layout_height="@dimen/branditemheight"/>
+     <ListView 
+    android:id="@+id/brandListView"
+    android:divider="@null"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></ListView>
+ </RelativeLayout>
+
+</LinearLayout>

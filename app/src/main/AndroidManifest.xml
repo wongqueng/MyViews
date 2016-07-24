@@ -30,7 +30,7 @@
             android:name=".ArcActivity"
             android:label="@string/title_activity_arc"></activity>
         <activity
-            android:name=".MyimageActivity"
+            android:name=".MyPathActivity"
             android:label="@string/title_activity_myimage"></activity>
         <activity
             android:name=".BrandListActivity"
