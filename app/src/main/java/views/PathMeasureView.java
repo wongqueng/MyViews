@@ -8,7 +8,6 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 /**
@@ -21,7 +20,7 @@ public class PathMeasureView extends View {
 PathMeasure pm;
     float[] pos=new float[2];
     float[] tan=new float[2];
-    float length;
+    float length;//修改标记
     final ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, 1);
     private float mAnimatorValue;
 
