@@ -56,9 +56,15 @@ public class MainActivity extends Activity {
 			Intent i10 = new Intent(this, SlidingMenuActivity.class);
 			startActivity(i10);
 			break;
-		case R.id.button11: 
+			case R.id.button11: {
 			Intent i11 = new Intent(this, RollBackActivity.class);
-			startActivity(i11);
+				startActivity(i11);
+			}
+			break;
+			case R.id.button12: {
+				Intent intent = new Intent(this, FloatEditActivity.class);
+				startActivity(intent);
+			}
 			break;
 		}
 	}

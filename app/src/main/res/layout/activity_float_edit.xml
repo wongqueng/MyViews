@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/activity_popu"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+	<EditText
+		android:id="@+id/et"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:textSize="16sp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/et"
+		>
+
+		<views.mylinearlayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="输入法窗口弹出的时候，输入框上移，但是后面的布局不动"
+				android:textSize="20sp"
+				android:gravity="center"
+				android:paddingBottom="5dp"
+				android:paddingTop="5dp"/>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@drawable/a"
+				/>
+		</views.mylinearlayout>
+	</LinearLayout>
+
+</RelativeLayout>
+

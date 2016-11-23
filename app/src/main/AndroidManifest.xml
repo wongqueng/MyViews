@@ -1,65 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lenovo.myviews">
+		  package="com.example.lenovo.myviews">
 
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".VIewPagerDemoActivity"
-            android:label="@string/title_activity_view_pager_demo"></activity>
-        <activity
-            android:name=".IpadPagerActivity"
-            android:label="@string/title_activity_ipad_pager"></activity>
-        <activity
-            android:name=".LoopViewActivity"
-            android:label="@string/title_activity_loop_view"></activity>
-        <activity
-            android:name=".ArcActivity"
-            android:label="@string/title_activity_arc"></activity>
-        <activity
-            android:name=".MyPathActivity"
-            android:label="@string/title_activity_myimage"></activity>
-        <activity
-            android:name=".BrandListActivity"
-            android:label="@string/title_activity_myimage"></activity>
-        <activity
-            android:name=".BlowActivity"
-            android:label="@string/title_activity_blow"></activity>
-        <activity
-            android:name=".WindowActivity"
-            android:label="@string/title_activity_window"></activity>
-        <activity
-            android:name=".MyWindowActivity"
-            android:label="@string/title_activity_my_decor"></activity>
-        <activity
-            android:name=".IndicatorActivity"
-            android:label="@string/title_activity_indicator"></activity>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".VIewPagerDemoActivity"
+			android:label="@string/title_activity_view_pager_demo"/>
+		<activity
+			android:name=".IpadPagerActivity"
+			android:label="@string/title_activity_ipad_pager"/>
+		<activity
+			android:name=".LoopViewActivity"
+			android:label="@string/title_activity_loop_view"/>
+		<activity
+			android:name=".ArcActivity"
+			android:label="@string/title_activity_arc"/>
+		<activity
+			android:name=".MyPathActivity"
+			android:label="@string/title_activity_myimage"/>
+		<activity
+			android:name=".BrandListActivity"
+			android:label="@string/title_activity_myimage"/>
+		<activity
+			android:name=".BlowActivity"
+			android:label="@string/title_activity_blow"/>
+		<activity
+			android:name=".WindowActivity"
+			android:label="@string/title_activity_window"/>
+		<activity
+			android:name=".MyWindowActivity"
+			android:label="@string/title_activity_my_decor"/>
+		<activity
+			android:name=".IndicatorActivity"
+			android:label="@string/title_activity_indicator"/>
 
-        <service
-            android:name=".MyWindowService"
-            android:enabled="true"
-            android:exported="true"></service>
+		<service
+			android:name=".MyWindowService"
+			android:enabled="true"
+			android:exported="true"/>
 
-        <activity
-            android:name=".SlidingMenuActivity"
-            android:label="@string/title_activity_sliding_menu"></activity>
-        <activity
-            android:name=".RollBackActivity"
-            android:label="@string/title_activity_roll_back"></activity>
-        <activity android:name=".Main2Activity"></activity>
-    </application>
+		<activity
+			android:name=".SlidingMenuActivity"
+			android:label="@string/title_activity_sliding_menu"/>
+		<activity
+			android:name=".RollBackActivity"
+			android:label="@string/title_activity_roll_back"/>
+		<activity android:name=".Main2Activity"/>
+		<activity
+			android:name=".FloatEditActivity"
+			android:label="FloatEdit"
+			android:theme="@style/Theme.AppCompat.Light"
+			android:windowSoftInputMode="adjustResize|stateHidden">
+		</activity>
+	</application>
 
 </manifest>

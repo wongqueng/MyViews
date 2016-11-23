@@ -1,16 +1,16 @@
 <resources>
 
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen  name="firsttextsize">18dp</dimen>
-    <dimen  name="secondtextsize">15dp</dimen>
-    <dimen  name="thirdtextsize">10dp</dimen>
-    <dimen  name="motorinftextsize">18dp</dimen>
-    <dimen  name="branditemheight">50dp</dimen>
-    <dimen name="WheelItemSpace">8dp</dimen>
-    <dimen name="WheelPadding">8dp</dimen>
-    <dimen name="WheelTextSize">20sp</dimen>
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="firsttextsize">18dp</dimen>
+	<dimen name="secondtextsize">15dp</dimen>
+	<dimen name="thirdtextsize">10dp</dimen>
+	<dimen name="motorinftextsize">18dp</dimen>
+	<dimen name="branditemheight">50dp</dimen>
+	<dimen name="WheelItemSpace">8dp</dimen>
+	<dimen name="WheelPadding">8dp</dimen>
+	<dimen name="WheelTextSize">20sp</dimen>
 
-    <dimen name="WheelLabelTextSize">12sp</dimen>
+	<dimen name="WheelLabelTextSize">12sp</dimen>
 </resources>
